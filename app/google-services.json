@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1085545593928",
+    "project_id": "appointeasemax",
+    "storage_bucket": "appointeasemax.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085545593928:android:dc0435ce3b686ce671ac7d",
+        "android_client_info": {
+          "package_name": "com.example.appointeasemax"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0iwWnjNt3JRuo4CNiL3trOLr6Bt3rGFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

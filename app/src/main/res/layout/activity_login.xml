@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/appointment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/purple_900" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:gravity="center"
+        android:layout_marginTop="32dp">
+
+        <ImageView
+            android:id="@+id/appLogoImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AppointEasy"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="32dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:alpha="0.7"
+                android:textColor="#818080"/>
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:hint="username"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_username"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="password"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:alpha="0.7"
+                android:textColor="#818080"/>
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_gray"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <RelativeLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.7"
+                    />
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I forgot my password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="login"
+                app:cornerRadius="32dp"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Users ? Register here"
+                android:textSize="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
